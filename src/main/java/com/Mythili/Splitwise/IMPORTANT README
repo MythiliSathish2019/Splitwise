@@ -1,0 +1,48 @@
+*** INPUT JSON BODY NEEDED FOR ANY POST CALL***
+*** USE POSTGRES FOR PERSISTENCE ***
+*** USED POSTMAN FOR API CALLS ***
+
+API CALLS AND FUNCTIONS
+
+USER
+
+(POST call)  http://localhost:8080/user/signup -- signing up or user registration
+(POST call)  http://localhost:8080/user/login -- user login
+(PUT call)  http://localhost:8080/user/update/{id} -- update the details for user with the provided id
+(PUT call)  http://localhost:8080/user/addFriend/{u_id}/{f_id} -- add the user with id f_id as a friend to the user with id u_id
+(GET call)  http://localhost:8080/user/{id} -- view the details/profile of the user with the provided id
+(GET call)  http://localhost:8080/user/viewGroups/{id} -- view the groups of the user with the provided id
+(GET call)  http://localhost:8080/user/viewFriends/{id} -- view the friends of the user with the provided id
+(DELETE call)  http://localhost:8080/user/delete/{id} -- delete the user permanently along with the group,expenses and user expenses created by that user with the provided id
+(PUT call)  http://localhost:8080/user/removeFriend/{u_id}/{f_id} -- remove the user with id f_id from the friends list of the user with id u_id
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+GROUP
+
+(POST call)  http://localhost:8080/group/create -- create a group
+(PUT call)  http://localhost:8080/group/addMember/{g_id}/{f_id} -- add the user with id f_id to the group with the id g_id
+(PUT call)  http://localhost:8080/group/addExpense/{g_id}/{e_id} -- add the expense with id e_id to the group with the id g_id
+(PUT call)  http://localhost:8080/group/update/{g_id} -- update the details for group with the provided id
+(GET call)  http://localhost:8080/group/{id} -- view the details of the group with the provided id
+(PUT call)  http://localhost:8080/group/updateExpense/{g_id}/{e_id} -- update the details of expense with id e_id in the group with id g_id
+(GET call)  http://localhost:8080/group/viewMembers/{id} -- view the members(users) of the group with the provided id
+(GET call)  http://localhost:8080/group/viewExpenses/{id} -- view the expenses of the group with the provided id
+(DELETE call)  http://localhost:8080/group/delete/{id} -- delete the group permanently along with the expenses and user expenses involved in group with the provided id
+(PUT call)  http://localhost:8080/group/removeMember/{g_id}/{m_id} -- remove the user with id m_id from the members list of the group with id g_id
+(PUT call)  http://localhost:8080/group/removeExpense/{g_id}/{e_id} -- remove and delete the expense with id e_id from the members list of the group with id g_id
+(GET call)  http://localhost:8080/group/settleUp/{id} -- settles up the expenses added in the group with the provided id by efficiently giving minimal transactions required
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+EXPENSE
+
+(POST call)  http://localhost:8080/expense/create -- create an expense
+(POST call)  http://localhost:8080/expense/addUserExpense/{e_id} -- create an user expense and adding it to the expense with id e_id
+(GET call)  http://localhost:8080/expense/{id} -- view the details of the expense with the provided id
+(PUT call)  http://localhost:8080/expense/updateUserExpense/{e_id}/{ue_id} -- update the details of user expense with id ue_id in the expense with id e_id
+(GET call)  http://localhost:8080/expense/viewUserExpenses/{id} -- view the user expenses of the expense with the provided id
+(DELETE call)  http://localhost:8080/expense/delete/{id} -- delete the expense permanently along with the user expenses involved in expense with the provided id
+(PUT call)  http://localhost:8080/expense/removeUserExpense/{e_id}/{ue_id} -- remove and delete the user expense with id ue_id from the members list of the group with id e_id
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
