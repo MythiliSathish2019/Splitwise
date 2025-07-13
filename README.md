@@ -55,4 +55,27 @@ A RESTful backend system for managing group expenses, built using Spring Boot an
   - expenses
   - user_expenses
   - settlement_transactions
+ 
+---
+
+## Future Improvements
+- Add JWT-based authentication
+- Introduce Redis caching
+- Add frontend UI using React
+- Enable email notifications for settlements
+
+---
+
+## References
+- Spring Boot – https://spring.io/projects/spring-boot
+- PostgreSQL – https://www.postgresql.org/
+- draw.io – https://www.diagrams.net/
+- LeetCode – https://leetcode.com/
+- Java UUID Documentation – https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html
+
+---
+
+## Acknowledgements
+This project was developed as part of an Applied Software Engineering course.
+Thanks to open-source documentation, online platforms, and technical forums that supported this work.
 
