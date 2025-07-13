@@ -40,9 +40,21 @@ A RESTful backend system for managing group expenses, built using Spring Boot an
 | Framework  | Spring Boot    |
 | Database   | PostgreSQL     |
 | ORM        | JPA + Hibernate|
-| Caching    | Redis (Planned)|
 | Diagrams   | draw.io        |
-| Tools      | Maven, Git     |
+
+---
+
+## Tools Used
+
+| Tool       | Purpose                                  |
+|------------|-------------------------------------------|
+| IntelliJ IDEA | Development and building the Spring Boot application |
+| Postman    | Testing RESTful API endpoints            |
+| pgAdmin    | Visual interface to inspect and manage PostgreSQL data |
+| Git        | Version control and collaboration        |
+| Maven      | Project build and dependency management  |
+| draw.io    | Diagram creation for class, ER, and deployment designs |
+
 
 ---
 
@@ -52,6 +64,7 @@ A RESTful backend system for managing group expenses, built using Spring Boot an
   - users
   - groups
   - user_groups
+  - user_friends
   - expenses
   - user_expenses
   - settlement_transactions
