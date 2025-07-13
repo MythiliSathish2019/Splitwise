@@ -46,16 +46,13 @@ A RESTful backend system for managing group expenses, built using Spring Boot an
 
 ---
 
-## Project Structure
-
-src/
-├── controller/ # REST Controllers
-├── service/ # Business Logic
-├── dto/ # Request/Response DTOs
-├── model/ # Entity Classes
-├── repository/ # JPA Repositories
-└── SplitwiseApplication.java
-
-
----
+## Database Schema
+- A normalized PostgreSQL schema ensures referential integrity and performance.
+- Main Tables:
+  - users
+  - groups
+  - user_groups
+  - expenses
+  - user_expenses
+  - settlement_transactions
 
